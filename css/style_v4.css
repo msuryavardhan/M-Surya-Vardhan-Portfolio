@@ -620,6 +620,23 @@ section { position: relative; z-index: 1; }
   width: 8px; height: 1px; background: rgba(163,255,18,0.4); transform: translateY(-50%);
 }
 
+/* Full-width summary card (spans both certs-grid columns) */
+.cert-card-full { grid-column: 1 / -1; }
+
+/* Verify-certificate link chip */
+.cert-verify-link {
+  display: inline-flex; align-items: center; gap: 7px; margin-top: auto;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; background: rgba(0,229,255,0.06); border: 1px solid rgba(0,229,255,0.20);
+  border-radius: 4px; color: var(--cyan); width: fit-content;
+  transition: background 0.2s, border-color 0.2s;
+}
+.cert-verify-link:hover { background: rgba(0,229,255,0.12); border-color: rgba(0,229,255,0.4); }
+.cert-verify-link i { font-size: 9px; }
+
+/* ── INTERNSHIP ── */
+.internship { padding: var(--sec-pad); background: linear-gradient(to bottom, var(--bg3), #000); }
+
 /* ── EDUCATION ── */
 .education { padding: var(--sec-pad); background: linear-gradient(to bottom, var(--bg3), #000); }
 

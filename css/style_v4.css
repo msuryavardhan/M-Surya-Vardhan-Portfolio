@@ -508,6 +508,8 @@ section { position: relative; z-index: 1; }
 .projects { padding: var(--sec-pad); background: linear-gradient(to bottom, var(--bg3), #000); }
 
 .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; max-width: 1200px; margin: 0 auto; }
+/* Center a lone leftover card when the count doesn't fill the last row of 3 */
+.projects-grid .proj-card:last-child:nth-child(3n+1) { grid-column: 2; }
 
 .proj-card {
   position: relative; background: rgba(255,255,255,0.03);
@@ -871,13 +873,19 @@ footer { position: relative; z-index: 1; padding: 60px 80px 50px; background: #0
   bottom: 12px; left: 50%; transform: translateX(-50%);
   display: flex; gap: 6px;
   z-index: 6;
+  max-width: calc(100% - 76px);
 }
 .car-dot {
   width: 18px; height: 3px;
   background: rgba(255,255,255,0.22);
   border: none; border-radius: 2px; cursor: pointer;
   padding: 0; transition: background 0.25s, width 0.3s;
+  flex-shrink: 0;
 }
+/* Compact sizing for carousels with many slides (e.g. 9+ images) */
+.car-dots-compact { gap: 3px; }
+.car-dots-compact .car-dot { width: 8px; }
+.car-dots-compact .car-dot.active { width: 15px; }
 .car-dot.active {
   background: var(--green); width: 30px;
   box-shadow: 0 0 8px rgba(163,255,18,0.65);

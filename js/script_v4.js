@@ -323,6 +323,11 @@ function initProjectCarousels(openProjectModal) {
     let current = 0;
     const total = slides.length; /* works for any slide count (2–8+), no hard-coding */
 
+    /* Shrink dots when there are many slides so they don't overflow on mobile */
+    if (total > 8) {
+      carousel.querySelector('.car-dots')?.classList.add('car-dots-compact');
+    }
+
     /* Mark single-slide carousels (hides controls via CSS) */
     if (total <= 1) {
       carousel.setAttribute('data-single', 'true');

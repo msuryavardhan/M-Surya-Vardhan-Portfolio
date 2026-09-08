@@ -791,6 +791,9 @@ footer { position: relative; z-index: 1; padding: 60px 80px 50px; background: #0
   background: rgba(163,255,18,0.04);
   border: 1px solid rgba(163,255,18,0.10);
   border-radius: 3px;
+  max-width: 88%;
+  text-align: center;
+  overflow-wrap: break-word;
 }
 
 /* Carousel bottom-overlay info bar */

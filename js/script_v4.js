@@ -312,11 +312,12 @@ function initProjectCarousels() {
     const dots   = carousel.querySelectorAll('.car-dot');
     const prevBtn = carousel.querySelector('.car-prev');
     const nextBtn = carousel.querySelector('.car-next');
+    const badge   = carousel.querySelector('.carousel-badge');
 
     if (!track || slides.length === 0) return;
 
     let current = 0;
-    const total = slides.length;
+    const total = slides.length; /* works for any slide count (2–8+), no hard-coding */
 
     /* Mark single-slide carousels (hides controls via CSS) */
     if (total <= 1) {
@@ -330,6 +331,11 @@ function initProjectCarousels() {
       track.style.transform = `translateX(-${current * 100}%)`;
 
       dots.forEach((d, i) => d.classList.toggle('active', i === current));
+
+      /* Image counter e.g. "01 / 06" — auto-matches total slide count */
+      if (badge) {
+        badge.textContent = `${String(current + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+      }
     }
 
     /* Dot clicks */

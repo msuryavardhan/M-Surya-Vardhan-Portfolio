@@ -224,7 +224,8 @@ document.addEventListener('DOMContentLoaded', () => {
      ============================================================ */
 
   initImageFallbacks();
-  initProjectCarousels();
+  const openProjectModal = initProjectModal();
+  initProjectCarousels(openProjectModal);
   initCertModal();
 
   /* ── CONSOLE — student branding ── */
@@ -304,7 +305,7 @@ function initImageFallbacks() {
    - Touch / swipe support
    - Keyboard arrow navigation (when focused)
    ============================================================ */
-function initProjectCarousels() {
+function initProjectCarousels(openProjectModal) {
 
   document.querySelectorAll('.proj-carousel').forEach(carousel => {
     const track  = carousel.querySelector('.carousel-track');
@@ -313,6 +314,9 @@ function initProjectCarousels() {
     const prevBtn = carousel.querySelector('.car-prev');
     const nextBtn = carousel.querySelector('.car-next');
     const badge   = carousel.querySelector('.carousel-badge');
+
+    /* Project title, reused as the modal's secondary line for every slide */
+    const projTitle = carousel.closest('.proj-card')?.querySelector('.proj-title')?.textContent.trim() || '';
 
     if (!track || slides.length === 0) return;
 
@@ -368,6 +372,20 @@ function initProjectCarousels() {
         goTo(touchDeltaX < 0 ? current + 1 : current - 1);
       }
     });
+
+    /* Click-to-expand — opens the current slide's image in the lightbox modal.
+       Skipped for placeholder (not-yet-uploaded) slides and for swipe gestures. */
+    if (openProjectModal) {
+      slides.forEach(slide => {
+        const img = slide.querySelector('.proj-slide-img');
+        if (!img) return;
+        img.addEventListener('click', () => {
+          if (Math.abs(touchDeltaX) > 10) return; /* was a swipe, not a tap */
+          if (img.classList.contains('ph-active')) return; /* image not uploaded yet */
+          openProjectModal(img.src, img.alt, projTitle);
+        });
+      });
+    }
 
     /* Keyboard (when card is focused) */
     const card = carousel.closest('.proj-card');
@@ -478,6 +496,49 @@ function initCertModal() {
       }
     });
   });
+}
+
+/* ============================================================
+   PROJECT IMAGE MODAL  (v4.1)
+   Same click-to-expand lightbox as the certification modal, wired
+   to the #projModal instance. Opens when a carousel image is tapped.
+   Returns the openModal function so initProjectCarousels() can call it.
+   ============================================================ */
+function initProjectModal() {
+  const modal = document.getElementById('projModal');
+  if (!modal) return null;
+
+  const backdrop = modal.querySelector('.cert-modal-backdrop');
+  const closeBtn = modal.querySelector('.cert-modal-close');
+  const modalImg = modal.querySelector('#projModalImg');
+  const modalTitle = modal.querySelector('#projModalTitle');
+  const modalSub  = modal.querySelector('#projModalSub');
+
+  function openModal(imgSrc, title, sub) {
+    modalImg.src = imgSrc || '';
+    modalImg.alt = title || 'Project image';
+    if (modalTitle) modalTitle.textContent = title || '';
+    if (modalSub)   modalSub.textContent   = sub   || '';
+
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => closeBtn && closeBtn.focus(), 350);
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+    setTimeout(() => { if (modalImg) modalImg.src = ''; }, 320);
+  }
+
+  closeBtn && closeBtn.addEventListener('click', closeModal);
+  backdrop && backdrop.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+
+  return openModal;
 }
 
 /* ── RESIZE → REFRESH AOS ── */

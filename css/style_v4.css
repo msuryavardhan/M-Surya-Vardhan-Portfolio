@@ -756,6 +756,26 @@ footer { position: relative; z-index: 1; padding: 60px 80px 50px; background: #0
   pointer-events: none;
 }
 
+/* Click-to-expand hover hint (opens full image in .cert-modal lightbox) */
+.proj-slide-img:not(.ph-active) { cursor: zoom-in; }
+.proj-slide-expand {
+  position: absolute; inset: 0; z-index: 3;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.30);
+  opacity: 0; transition: opacity 0.3s;
+  pointer-events: none;
+}
+.proj-img-wrap:hover .proj-slide-expand { opacity: 1; }
+.proj-slide-img.ph-active + .proj-slide-expand { display: none; }
+.proj-slide-expand i {
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; color: var(--green);
+  background: rgba(0,0,0,0.55);
+  border: 1px solid rgba(163,255,18,0.3);
+  filter: drop-shadow(0 0 8px rgba(163,255,18,0.55));
+}
+
 /* SVG placeholder — shown when image is missing */
 .proj-slide-ph {
   position: absolute;

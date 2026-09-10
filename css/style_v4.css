@@ -634,6 +634,12 @@ section { position: relative; z-index: 1; }
 .cert-verify-link:hover { background: rgba(0,229,255,0.12); border-color: rgba(0,229,255,0.4); }
 .cert-verify-link i { font-size: 9px; }
 
+/* Row of link chips (e.g. publication card: view paper + related project) */
+.cert-actions-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: auto; }
+
+/* ── PUBLICATIONS ── */
+.publications { padding: var(--sec-pad); background: var(--bg); }
+
 /* ── INTERNSHIP ── */
 .internship { padding: var(--sec-pad); background: linear-gradient(to bottom, var(--bg3), #000); }
 

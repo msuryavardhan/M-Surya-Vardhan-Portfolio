@@ -623,6 +623,13 @@ section { position: relative; z-index: 1; }
 /* Full-width summary card (spans both certs-grid columns) */
 .cert-card-full { grid-column: 1 / -1; }
 
+/* Center a lone last certification card in the 2-column layout */
+@media (min-width: 901px) {
+  #certs .certs-grid .cert-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1; justify-self: center; width: calc(50% - 14px);
+  }
+}
+
 /* Verify-certificate link chip */
 .cert-verify-link {
   display: inline-flex; align-items: center; gap: 7px; margin-top: auto;
@@ -780,6 +787,8 @@ footer { position: relative; z-index: 1; padding: 60px 80px 50px; background: #0
   opacity: 0;
   pointer-events: none;
 }
+/* Wide screenshots (e.g. simulator windows): show the whole image instead of cropping */
+.proj-slide-img.fit-contain { object-fit: contain; }
 
 /* Click-to-expand hover hint (opens full image in .cert-modal lightbox) */
 .proj-slide-img:not(.ph-active) { cursor: zoom-in; }

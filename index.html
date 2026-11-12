@@ -7,7 +7,7 @@
 
   <!-- ── SEO ── -->
   <title>M Surya Vardhan | VLSI Design Student | VIT Chennai</title>
-  <meta name="description" content="M Surya Vardhan – M.Tech VLSI Design student at VIT Chennai interested in ASIC Physical Design, FPGA Development, RTL Design and Semiconductor Systems."/>
+  <meta name="description" content="M Surya Vardhan – M.Tech VLSI Design student at VIT Chennai interested in ASIC Physical Design, FPGA Development, RTL Design, Design Verification and Semiconductor Systems."/>
   <meta name="keywords" content="VLSI Design Student, ASIC Physical Design, RTL to GDSII, Cadence Genus, Cadence Innovus, FPGA, Verilog, M Surya Vardhan, VIT Chennai, Semiconductor"/>
   <meta name="author" content="Manchikanti Surya Vardhan"/>
   <meta name="robots" content="index, follow"/>
@@ -16,14 +16,14 @@
   <!-- ── Open Graph ── -->
   <meta property="og:type"        content="website"/>
   <meta property="og:title"       content="M Surya Vardhan | VLSI Design Student | VIT Chennai"/>
-  <meta property="og:description" content="M.Tech VLSI Design student at VIT Chennai interested in ASIC Physical Design, FPGA Development, RTL Design and Semiconductor Systems."/>
+  <meta property="og:description" content="M.Tech VLSI Design student at VIT Chennai interested in ASIC Physical Design, FPGA Development, RTL Design, Design Verification and Semiconductor Systems."/>
   <meta property="og:url"         content="https://github.com/msuryavardhan"/>
   <meta property="og:image"       content="https://github.com/msuryavardhan/assets/images/profile/og.jpeg"/>
 
   <!-- ── Twitter Card ── -->
   <meta name="twitter:card"        content="summary_large_image"/>
   <meta name="twitter:title"       content="M Surya Vardhan | VLSI Design Student | VIT Chennai"/>
-  <meta name="twitter:description" content="M.Tech VLSI Design student at VIT Chennai interested in ASIC Physical Design, FPGA Development, RTL Design and Semiconductor Systems."/>
+  <meta name="twitter:description" content="M.Tech VLSI Design student at VIT Chennai interested in ASIC Physical Design, FPGA Development, RTL Design, Design Verification and Semiconductor Systems."/>
 
   <!-- ── Structured Data ── -->
   <script type="application/ld+json">
@@ -32,7 +32,7 @@
     "@type": "Person",
     "name": "Manchikanti Surya Vardhan",
     "jobTitle": "M.Tech VLSI Design Student",
-    "description": "M.Tech VLSI Design student at VIT Chennai interested in ASIC Physical Design, FPGA Development, RTL Design and Semiconductor Systems.",
+    "description": "M.Tech VLSI Design student at VIT Chennai interested in ASIC Physical Design, FPGA Development, RTL Design, Design Verification and Semiconductor Systems.",
     "email": "msuryavar@gmail.com",
     "telephone": "+91-9676810809",
     "url": "https://github.com/msuryavardhan",
@@ -152,7 +152,7 @@
     <div class="h-divider"></div>
     <p class="h-intro">
       M.Tech VLSI Design student at VIT Chennai with interests in ASIC Physical Design,
-      FPGA Development, RTL Design and Semiconductor Systems.
+      FPGA Development, RTL Design, Design Verification and Semiconductor Systems.
     </p>
     <div class="h-btns">
       <a href="assets/resume/Manchikanti_Surya_Vardhan_Resume_Latest.pdf" target="_blank"
@@ -373,9 +373,9 @@
       <div class="a-role">VLSI Design Student</div>
       <div class="a-loc"><i class="fas fa-map-marker-alt" style="color:#A3FF12;margin-right:6px"></i>Hyderabad, India</div>
       <div class="a-stat-row">
-        <div class="a-stat"><div class="a-stat-n">5+</div><div class="a-stat-l">Projects</div></div>
+        <div class="a-stat"><div class="a-stat-n">6+</div><div class="a-stat-l">Projects</div></div>
         <div class="a-stat"><div class="a-stat-n">9+</div><div class="a-stat-l">EDA Tools</div></div>
-        <div class="a-stat"><div class="a-stat-n">10</div><div class="a-stat-l">Certs</div></div>
+        <div class="a-stat"><div class="a-stat-n">11</div><div class="a-stat-l">Certs</div></div>
         <div class="a-stat"><div class="a-stat-n">8.45</div><div class="a-stat-l">CGPA</div></div>
       </div>
     </div>
@@ -386,6 +386,10 @@
           <div class="about-highlight-item">
             <div class="ahl-icon"></div>
             Full RTL-to-GDSII ASIC flow on a 32-bit RISC-V design using Cadence Genus + Innovus on gpdk90 PDK.
+          </div>
+          <div class="about-highlight-item">
+            <div class="ahl-icon"></div>
+            UVM-based verification of an asynchronous FIFO in SystemVerilog — scoreboard checking and 87.50% functional coverage in QuestaSim.
           </div>
           <div class="about-highlight-item">
             <div class="ahl-icon"></div>
@@ -425,6 +429,7 @@
           <div class="interest-pill"><i class="fas fa-server"></i> FPGA Development</div>
           <div class="interest-pill"><i class="fas fa-cpu"></i> RISC-V Architecture</div>
           <div class="interest-pill"><i class="fas fa-bolt"></i> Low Power Design</div>
+          <div class="interest-pill"><i class="fas fa-check-double"></i> Design Verification</div>
         </div>
       </div>
     </div>
@@ -690,6 +695,137 @@
         </ul>
         <div class="proj-footer">
           <div class="p-tools"><span class="p-tool">Cadence Genus</span><span class="p-tool">Innovus</span><span class="p-tool">Verilog</span><span class="p-tool">gpdk90</span></div>
+          <div class="p-links"><a href="https://github.com/msuryavardhan" class="p-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PROJECT — Async FIFO (UVM Verification) — shown 2nd ── -->
+    <div class="proj-card" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="proj-img-wrap">
+        <div class="proj-carousel" data-carousel="p6">
+          <div class="carousel-track">
+
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+              <img src="assets/images/projects/async-fifo-questasim-overview.png"
+                   alt="QuestaSim session for the asynchronous FIFO UVM testbench — waveform, scoreboard transcript and 87.50% functional coverage"
+                   class="proj-slide-img fit-contain" loading="lazy"/>
+              <div class="proj-slide-expand" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+              <div class="proj-slide-ph">
+                <svg class="ph-chip-svg" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="8" y="8" width="64" height="64" fill="#040d04" stroke="#00E5FF" stroke-width="1.5" rx="4"/>
+                  <rect x="16" y="16" width="48" height="48" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.6" rx="2"/>
+                  <line x1="8" y1="28" x2="72" y2="28" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+                  <line x1="8" y1="52" x2="72" y2="52" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+                  <text x="40" y="44" text-anchor="middle" fill="rgba(0,229,255,0.45)" font-family="monospace" font-size="6" letter-spacing="1">UVM</text>
+                  <rect x="8" y="8" width="64" height="64" fill="none" stroke="#00E5FF" stroke-width="1" rx="4">
+                    <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="2.3s" repeatCount="indefinite"/>
+                  </rect>
+                </svg>
+                <div class="ph-hint">async-fifo-questasim-overview.png</div>
+              </div>
+              <div class="img-skel"></div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <img src="assets/images/projects/async-fifo-simulation-waveform.png"
+                   alt="QuestaSim waveform — independent clk_w and clk_r, wr_en/rd_en, din/dout, full/empty and write/read pointers"
+                   class="proj-slide-img fit-contain" loading="lazy"/>
+              <div class="proj-slide-expand" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+              <div class="proj-slide-ph">
+                <svg class="ph-chip-svg" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="8" y="8" width="64" height="64" fill="#040d04" stroke="#00E5FF" stroke-width="1.5" rx="4"/>
+                  <rect x="16" y="16" width="48" height="48" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.6" rx="2"/>
+                  <line x1="8" y1="28" x2="72" y2="28" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+                  <line x1="8" y1="52" x2="72" y2="52" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+                  <text x="40" y="44" text-anchor="middle" fill="rgba(0,229,255,0.45)" font-family="monospace" font-size="6" letter-spacing="1">SIM</text>
+                  <rect x="8" y="8" width="64" height="64" fill="none" stroke="#00E5FF" stroke-width="1" rx="4">
+                    <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="2.3s" repeatCount="indefinite"/>
+                  </rect>
+                </svg>
+                <div class="ph-hint">async-fifo-simulation-waveform.png</div>
+              </div>
+              <div class="img-skel"></div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <img src="assets/images/projects/async-fifo-scoreboard-transcript.png"
+                   alt="UVM scoreboard transcript — expected vs actual read data table and UVM report summary"
+                   class="proj-slide-img fit-contain" loading="lazy"/>
+              <div class="proj-slide-expand" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+              <div class="proj-slide-ph">
+                <svg class="ph-chip-svg" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="8" y="8" width="64" height="64" fill="#040d04" stroke="#00E5FF" stroke-width="1.5" rx="4"/>
+                  <rect x="16" y="16" width="48" height="48" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.6" rx="2"/>
+                  <line x1="8" y1="28" x2="72" y2="28" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+                  <line x1="8" y1="52" x2="72" y2="52" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+                  <text x="40" y="44" text-anchor="middle" fill="rgba(0,229,255,0.45)" font-family="monospace" font-size="6" letter-spacing="1">UVM</text>
+                  <rect x="8" y="8" width="64" height="64" fill="none" stroke="#00E5FF" stroke-width="1" rx="4">
+                    <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="2.3s" repeatCount="indefinite"/>
+                  </rect>
+                </svg>
+                <div class="ph-hint">async-fifo-scoreboard-transcript.png</div>
+              </div>
+              <div class="img-skel"></div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+              <img src="assets/images/projects/async-fifo-functional-coverage.png"
+                   alt="QuestaSim Covergroups panel — fifo_cov functional coverage 87.50%"
+                   class="proj-slide-img fit-contain" loading="lazy"/>
+              <div class="proj-slide-expand" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+              <div class="proj-slide-ph">
+                <svg class="ph-chip-svg" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="8" y="8" width="64" height="64" fill="#040d04" stroke="#00E5FF" stroke-width="1.5" rx="4"/>
+                  <rect x="16" y="16" width="48" height="48" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.6" rx="2"/>
+                  <line x1="8" y1="28" x2="72" y2="28" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+                  <line x1="8" y1="52" x2="72" y2="52" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+                  <text x="40" y="44" text-anchor="middle" fill="rgba(0,229,255,0.45)" font-family="monospace" font-size="6" letter-spacing="1">COV</text>
+                  <rect x="8" y="8" width="64" height="64" fill="none" stroke="#00E5FF" stroke-width="1" rx="4">
+                    <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="2.3s" repeatCount="indefinite"/>
+                  </rect>
+                </svg>
+                <div class="ph-hint">async-fifo-functional-coverage.png</div>
+              </div>
+              <div class="img-skel"></div>
+            </div>
+
+          </div><!-- /carousel-track -->
+
+          <div class="carousel-info">
+            <span class="carousel-badge">01 / 04</span>
+            <span class="carousel-tag">UVM · Async FIFO</span>
+          </div>
+
+          <button class="car-btn car-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+          <div class="car-dots">
+            <button class="car-dot active" data-idx="0" aria-label="Image 1"></button>
+            <button class="car-dot"        data-idx="1" aria-label="Image 2"></button>
+            <button class="car-dot"        data-idx="2" aria-label="Image 3"></button>
+            <button class="car-dot"        data-idx="3" aria-label="Image 4"></button>
+          </div>
+          <button class="car-btn car-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+
+        </div><!-- /proj-carousel -->
+      </div><!-- /proj-img-wrap -->
+
+      <div class="proj-body">
+        <div class="proj-tags"><span class="p-tag">Design Verification</span><span class="p-tag">UVM</span><span class="p-tag">SystemVerilog</span><span class="p-tag">Async FIFO</span></div>
+        <div class="proj-title">Asynchronous FIFO Design &amp; UVM-Based Verification</div>
+        <p class="proj-desc">Asynchronous FIFO in SystemVerilog with independent write and read clocks, verified with a layered UVM testbench — scoreboard checking against a reference model and a functional-coverage model — simulated in QuestaSim.</p>
+        <ul class="proj-bullets">
+          <li>Parameterized 8-entry × 8-bit FIFO with independent write (100 MHz) and read (~71 MHz) clocks</li>
+          <li>Layered UVM environment — transaction, sequence, sequencer, driver, monitor, scoreboard, env and test</li>
+          <li>Reference-queue scoreboard compares every read against the expected data order</li>
+          <li>Functional coverage model (covergroups + crosses) reached 87.50% in QuestaSim</li>
+        </ul>
+        <div class="proj-footer">
+          <div class="p-tools"><span class="p-tool">QuestaSim</span><span class="p-tool">SystemVerilog</span><span class="p-tool">UVM</span></div>
           <div class="p-links"><a href="https://github.com/msuryavardhan" class="p-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
         </div>
       </div>
@@ -1938,8 +2074,184 @@
 
   <div class="certs-grid">
 
-    <!-- ── Cert 1 — ChipXpert Workshop ── -->
+    <!-- ── Cert 1 — NPTEL VLSI Design Flow: RTL to GDS ── -->
+    <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
+
+      <div class="cert-thumb-wrap"
+           role="button" tabindex="0"
+           aria-label="View certificate: VLSI Design Flow: RTL to GDS"
+           data-cert-img="assets/images/certifications/cert-nptel-rtl-to-gds.jpg"
+           data-cert-name="VLSI Design Flow: RTL to GDS"
+           data-cert-issuer="NPTEL / SWAYAM — IIIT Delhi">
+        <img src="assets/images/certifications/cert-nptel-rtl-to-gds.jpg"
+             alt="NPTEL certificate — VLSI Design Flow: RTL to GDS"
+             class="cert-thumb-img" loading="lazy"/>
+        <div class="cert-thumb-ph">
+          <div class="cert-ph-icon"><i class="fas fa-route"></i></div>
+          <div class="cert-ph-label">Certificate Preview</div>
+          <div class="cert-ph-hint">cert-nptel-rtl-to-gds.jpg</div>
+        </div>
+        <div class="cert-thumb-overlay">
+          <i class="fas fa-expand-alt"></i>
+          <span>View Certificate</span>
+        </div>
+        <div class="img-skel"></div>
+      </div>
+
+      <div class="cert-header-row">
+        <div class="cert-ic"><i class="fas fa-route"></i></div>
+        <div class="cert-header-right">
+          <div class="cert-name">VLSI Design Flow: RTL to GDS</div>
+          <div class="cert-issuer">NPTEL / SWAYAM — IIIT Delhi</div>
+          <div class="cert-date"><i class="fas fa-calendar-alt"></i> Jul – Oct 2026 · 12-Week Course</div>
+        </div>
+      </div>
+      <div class="cert-desc">
+        12-week course on the end-to-end VLSI design flow, from RTL through to GDSII.
+      </div>
+      <div class="cert-skills">
+        <span class="cert-skill-tag">VLSI Design Flow</span>
+        <span class="cert-skill-tag">RTL-to-GDSII</span>
+      </div>
+      <span class="cert-badge">2026</span>
+    </div>
+
+      <!-- ── Cert 2 — Verilog HDL ── -->
+    <div class="cert-card" data-aos="fade-up" data-aos-delay="80">
+
+      <div class="cert-thumb-wrap"
+           role="button" tabindex="0"
+           aria-label="View certificate: Certified in Verilog HDL"
+           data-cert-img="assets/images/certifications/cert-verilog-hdl.png"
+           data-cert-name="Certified in Verilog HDL — Hands-On"
+           data-cert-issuer="Maven Silicon">
+        <img src="assets/images/certifications/cert-verilog-hdl.png"
+             alt="Verilog HDL Certificate"
+             class="cert-thumb-img" loading="lazy"/>
+        <div class="cert-thumb-ph">
+          <div class="cert-ph-icon"><i class="fas fa-code"></i></div>
+          <div class="cert-ph-label">Certificate Preview</div>
+          <div class="cert-ph-hint">cert-verilog-hdl.jpg</div>
+        </div>
+        <div class="cert-thumb-overlay">
+          <i class="fas fa-expand-alt"></i>
+          <span>View Certificate</span>
+        </div>
+        <div class="img-skel"></div>
+      </div>
+
+      <div class="cert-ic"><i class="fas fa-code"></i></div>
+      <div class="cert-name">Certified in Verilog HDL — Hands-On</div>
+      <div class="cert-issuer">Maven Silicon</div>
+      <span class="cert-badge">2025</span>
+    </div>
+
+    <!-- ── Cert 3 — SVA ── -->
+    <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
+
+      <div class="cert-thumb-wrap"
+           role="button" tabindex="0"
+           aria-label="View certificate: SystemVerilog Assertions (SVA)"
+           data-cert-img="assets/images/certifications/cert-sva-guide.jpg"
+           data-cert-name="SystemVerilog Assertions (SVA) — Complete Guide"
+           data-cert-issuer="Srinivasan Venkataramanan">
+        <img src="assets/images/certifications/cert-sva-guide.jpg"
+             alt="SVA Complete Guide Certificate"
+             class="cert-thumb-img" loading="lazy"/>
+        <div class="cert-thumb-ph">
+          <div class="cert-ph-icon"><i class="fas fa-certificate"></i></div>
+          <div class="cert-ph-label">Certificate Preview</div>
+          <div class="cert-ph-hint">cert-sva-guide.jpg</div>
+        </div>
+        <div class="cert-thumb-overlay">
+          <i class="fas fa-expand-alt"></i>
+          <span>View Certificate</span>
+        </div>
+        <div class="img-skel"></div>
+      </div>
+
+      <div class="cert-ic"><i class="fas fa-certificate"></i></div>
+      <div class="cert-name">SystemVerilog Assertions (SVA) — Complete Guide</div>
+      <div class="cert-issuer">Srinivasan Venkataramanan</div>
+      <span class="cert-badge ongoing">Ongoing</span>
+    </div>
+
+    <!-- ── Cert 4 — CMOS VLSI ── -->
+    <div class="cert-card" data-aos="fade-up" data-aos-delay="80">
+
+      <div class="cert-thumb-wrap"
+           role="button" tabindex="0"
+           aria-label="View certificate: Certified in CMOS Digital VLSI Design"
+           data-cert-img="assets/images/certifications/cert-cmos-vlsi-nptel.png"
+           data-cert-name="Certified in CMOS Digital VLSI Design"
+           data-cert-issuer="NPTEL / SWAYAM">
+        <img src="assets/images/certifications/cert-cmos-vlsi-nptel.png"
+             alt="CMOS VLSI Design Certificate"
+             class="cert-thumb-img" loading="lazy"/>
+        <div class="cert-thumb-ph">
+          <div class="cert-ph-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="cert-ph-label">Certificate Preview</div>
+          <div class="cert-ph-hint">cert-cmos-vlsi-nptel.jpg</div>
+        </div>
+        <div class="cert-thumb-overlay">
+          <i class="fas fa-expand-alt"></i>
+          <span>View Certificate</span>
+        </div>
+        <div class="img-skel"></div>
+      </div>
+
+      <div class="cert-ic"><i class="fas fa-graduation-cap"></i></div>
+      <div class="cert-name">Certified in CMOS Digital VLSI Design</div>
+      <div class="cert-issuer">NPTEL / SWAYAM</div>
+      <span class="cert-badge">2025</span>
+    </div>
+
+    <!-- ── Cert 5 — ProV Logic Workshop ── -->
     <div class="cert-card cert-workshop" data-aos="fade-up" data-aos-delay="0">
+
+      <div class="cert-thumb-wrap"
+           role="button" tabindex="0"
+           aria-label="View certificate: RTL to GDS-II Workshop"
+           data-cert-img="assets/images/certifications/cert-provlogic-rtlgds.png"
+           data-cert-name="RTL to GDS-II Workshop"
+           data-cert-issuer="ProV Logic">
+        <img src="assets/images/certifications/cert-provlogic-rtlgds.png"
+             alt="ProV Logic RTL to GDS-II Workshop Certificate"
+             class="cert-thumb-img" loading="lazy"/>
+        <div class="cert-thumb-ph">
+          <div class="cert-ph-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="cert-ph-label">Certificate Preview</div>
+          <div class="cert-ph-hint">cert-provlogic-rtlgds.jpg</div>
+        </div>
+        <div class="cert-thumb-overlay">
+          <i class="fas fa-expand-alt"></i>
+          <span>View Certificate</span>
+        </div>
+        <div class="img-skel"></div>
+      </div>
+
+      <div class="cert-header-row">
+        <div class="cert-ic"><i class="fas fa-layer-group"></i></div>
+        <div class="cert-header-right">
+          <div class="cert-name">RTL to GDS-II Workshop</div>
+          <div class="cert-issuer">ProV Logic</div>
+          <div class="cert-date"><i class="fas fa-calendar-alt"></i> 13 June 2026 – 14 June 2026</div>
+        </div>
+      </div>
+      <div class="cert-desc">
+        2-Day workshop focused on RTL-to-GDSII design methodology, VLSI Physical Design Flow and ASIC implementation concepts.
+      </div>
+      <div class="cert-skills">
+        <span class="cert-skill-tag">RTL Design</span>
+        <span class="cert-skill-tag">ASIC Physical Design</span>
+        <span class="cert-skill-tag">RTL-to-GDSII Flow</span>
+        <span class="cert-skill-tag">Physical Design Flow</span>
+      </div>
+      <span class="cert-badge">June 2026</span>
+    </div>
+
+    <!-- ── Cert 6 — ChipXpert Workshop ── -->
+    <div class="cert-card cert-workshop" data-aos="fade-up" data-aos-delay="80">
 
       <!-- v4: Thumbnail banner -->
       <div class="cert-thumb-wrap"
@@ -1983,82 +2295,8 @@
       <span class="cert-badge">May 2026</span>
     </div>
 
-    <!-- ── Cert 2 — ProV Logic Workshop ── -->
-    <div class="cert-card cert-workshop" data-aos="fade-up" data-aos-delay="80">
-
-      <div class="cert-thumb-wrap"
-           role="button" tabindex="0"
-           aria-label="View certificate: RTL to GDS-II Workshop"
-           data-cert-img="assets/images/certifications/cert-provlogic-rtlgds.png"
-           data-cert-name="RTL to GDS-II Workshop"
-           data-cert-issuer="ProV Logic">
-        <img src="assets/images/certifications/cert-provlogic-rtlgds.png"
-             alt="ProV Logic RTL to GDS-II Workshop Certificate"
-             class="cert-thumb-img" loading="lazy"/>
-        <div class="cert-thumb-ph">
-          <div class="cert-ph-icon"><i class="fas fa-layer-group"></i></div>
-          <div class="cert-ph-label">Certificate Preview</div>
-          <div class="cert-ph-hint">cert-provlogic-rtlgds.jpg</div>
-        </div>
-        <div class="cert-thumb-overlay">
-          <i class="fas fa-expand-alt"></i>
-          <span>View Certificate</span>
-        </div>
-        <div class="img-skel"></div>
-      </div>
-
-      <div class="cert-header-row">
-        <div class="cert-ic"><i class="fas fa-layer-group"></i></div>
-        <div class="cert-header-right">
-          <div class="cert-name">RTL to GDS-II Workshop</div>
-          <div class="cert-issuer">ProV Logic</div>
-          <div class="cert-date"><i class="fas fa-calendar-alt"></i> 13 June 2026 – 14 June 2026</div>
-        </div>
-      </div>
-      <div class="cert-desc">
-        2-Day workshop focused on RTL-to-GDSII design methodology, VLSI Physical Design Flow and ASIC implementation concepts.
-      </div>
-      <div class="cert-skills">
-        <span class="cert-skill-tag">RTL Design</span>
-        <span class="cert-skill-tag">ASIC Physical Design</span>
-        <span class="cert-skill-tag">RTL-to-GDSII Flow</span>
-        <span class="cert-skill-tag">Physical Design Flow</span>
-      </div>
-      <span class="cert-badge">June 2026</span>
-    </div>
-
-    <!-- ── Cert 3 — SVA ── -->
+    <!-- ── Cert 7 — ASIC Flow ── -->
     <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
-
-      <div class="cert-thumb-wrap"
-           role="button" tabindex="0"
-           aria-label="View certificate: SystemVerilog Assertions (SVA)"
-           data-cert-img="assets/images/certifications/cert-sva-guide.jpg"
-           data-cert-name="SystemVerilog Assertions (SVA) — Complete Guide"
-           data-cert-issuer="Srinivasan Venkataramanan">
-        <img src="assets/images/certifications/cert-sva-guide.jpg"
-             alt="SVA Complete Guide Certificate"
-             class="cert-thumb-img" loading="lazy"/>
-        <div class="cert-thumb-ph">
-          <div class="cert-ph-icon"><i class="fas fa-certificate"></i></div>
-          <div class="cert-ph-label">Certificate Preview</div>
-          <div class="cert-ph-hint">cert-sva-guide.jpg</div>
-        </div>
-        <div class="cert-thumb-overlay">
-          <i class="fas fa-expand-alt"></i>
-          <span>View Certificate</span>
-        </div>
-        <div class="img-skel"></div>
-      </div>
-
-      <div class="cert-ic"><i class="fas fa-certificate"></i></div>
-      <div class="cert-name">SystemVerilog Assertions (SVA) — Complete Guide</div>
-      <div class="cert-issuer">Srinivasan Venkataramanan</div>
-      <span class="cert-badge ongoing">Ongoing</span>
-    </div>
-
-    <!-- ── Cert 4 — ASIC Flow ── -->
-    <div class="cert-card" data-aos="fade-up" data-aos-delay="80">
 
       <div class="cert-thumb-wrap"
            role="button" tabindex="0"
@@ -2087,67 +2325,7 @@
       <span class="cert-badge ongoing">Ongoing</span>
     </div>
 
-    <!-- ── Cert 5 — Verilog HDL ── -->
-    <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
-
-      <div class="cert-thumb-wrap"
-           role="button" tabindex="0"
-           aria-label="View certificate: Certified in Verilog HDL"
-           data-cert-img="assets/images/certifications/cert-verilog-hdl.png"
-           data-cert-name="Certified in Verilog HDL — Hands-On"
-           data-cert-issuer="Maven Silicon">
-        <img src="assets/images/certifications/cert-verilog-hdl.png"
-             alt="Verilog HDL Certificate"
-             class="cert-thumb-img" loading="lazy"/>
-        <div class="cert-thumb-ph">
-          <div class="cert-ph-icon"><i class="fas fa-code"></i></div>
-          <div class="cert-ph-label">Certificate Preview</div>
-          <div class="cert-ph-hint">cert-verilog-hdl.jpg</div>
-        </div>
-        <div class="cert-thumb-overlay">
-          <i class="fas fa-expand-alt"></i>
-          <span>View Certificate</span>
-        </div>
-        <div class="img-skel"></div>
-      </div>
-
-      <div class="cert-ic"><i class="fas fa-code"></i></div>
-      <div class="cert-name">Certified in Verilog HDL — Hands-On</div>
-      <div class="cert-issuer">Maven Silicon</div>
-      <span class="cert-badge">2025</span>
-    </div>
-
-    <!-- ── Cert 6 — CMOS VLSI ── -->
-    <div class="cert-card" data-aos="fade-up" data-aos-delay="80">
-
-      <div class="cert-thumb-wrap"
-           role="button" tabindex="0"
-           aria-label="View certificate: Certified in CMOS Digital VLSI Design"
-           data-cert-img="assets/images/certifications/cert-cmos-vlsi-nptel.png"
-           data-cert-name="Certified in CMOS Digital VLSI Design"
-           data-cert-issuer="NPTEL / SWAYAM">
-        <img src="assets/images/certifications/cert-cmos-vlsi-nptel.png"
-             alt="CMOS VLSI Design Certificate"
-             class="cert-thumb-img" loading="lazy"/>
-        <div class="cert-thumb-ph">
-          <div class="cert-ph-icon"><i class="fas fa-graduation-cap"></i></div>
-          <div class="cert-ph-label">Certificate Preview</div>
-          <div class="cert-ph-hint">cert-cmos-vlsi-nptel.jpg</div>
-        </div>
-        <div class="cert-thumb-overlay">
-          <i class="fas fa-expand-alt"></i>
-          <span>View Certificate</span>
-        </div>
-        <div class="img-skel"></div>
-      </div>
-
-      <div class="cert-ic"><i class="fas fa-graduation-cap"></i></div>
-      <div class="cert-name">Certified in CMOS Digital VLSI Design</div>
-      <div class="cert-issuer">NPTEL / SWAYAM</div>
-      <span class="cert-badge">2025</span>
-    </div>
-
-  </div><!-- /certs-grid -->
+</div><!-- /certs-grid -->
 </section>
 
 <!-- ================================================================
@@ -2369,7 +2547,7 @@
   <div class="ach-grid">
     <div class="ach-card" data-aos="zoom-in">
       <div class="ach-icon"><i class="fas fa-microchip"></i></div>
-      <div class="ach-n"><span class="counter" data-target="5">0</span><sup>+</sup></div>
+      <div class="ach-n"><span class="counter" data-target="6">0</span><sup>+</sup></div>
       <div class="ach-label">Projects Completed</div>
     </div>
     <div class="ach-card" data-aos="zoom-in" data-aos-delay="80">
@@ -2379,7 +2557,7 @@
     </div>
     <div class="ach-card" data-aos="zoom-in" data-aos-delay="160">
       <div class="ach-icon"><i class="fas fa-certificate"></i></div>
-      <div class="ach-n"><span class="counter" data-target="10">0</span></div>
+      <div class="ach-n"><span class="counter" data-target="11">0</span></div>
       <div class="ach-label">Certifications</div>
     </div>
     <div class="ach-card" data-aos="zoom-in" data-aos-delay="240">
